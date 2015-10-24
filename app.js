@@ -9,19 +9,19 @@ http.createServer(function (req, res) {
 	var url = req.url;
    switch (url)
    {
-      case "/beers/create":{
+      case "/api/beers/create":{
          Controler.create(res, req);
          break;
       }
-      case "/beers/update":{
+      case "/api/beers/update":{
          Controler.update(res, req);
          break;
       }
-      case "/beers/retrieve":{
+      case "/api/beers/retrieve":{
          Controler.retrieve(res, req);
          break;
       }
-      case "/beers/delete":{
+      case "/api/beers/delete":{
          Controler.del(res, req);
          break;
       }
